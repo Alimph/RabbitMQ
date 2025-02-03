@@ -1,3 +1,5 @@
+using Consumer.BackgroundServices;
+
 namespace Consumer
 {
     public class Program
@@ -8,7 +10,7 @@ namespace Consumer
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-
+            builder.Services.AddHostedService<UserValidationMessageConsumerService>(); 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
