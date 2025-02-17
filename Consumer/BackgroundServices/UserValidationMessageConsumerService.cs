@@ -13,7 +13,7 @@ namespace Consumer.BackgroundServices
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             Task.Delay(60_000).Wait();
-            await StartConsumingAsync(RabbitMQQueues.OrderValidationQueue, stoppingToken);
+            await StartConsumingAsync(RabbitMQQueues.UserValidationQueue, stoppingToken);
             await Task.CompletedTask;
         }
 

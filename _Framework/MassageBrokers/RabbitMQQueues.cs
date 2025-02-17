@@ -2,6 +2,6 @@
 {
     public static class RabbitMQQueues
     {
-        public const string OrderValidationQueue = "userValidationQueue";
+        public const string UserValidationQueue = "userValidationQueue";
     }
 }
